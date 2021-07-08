@@ -1,48 +1,29 @@
-import './App.css';
+import "./App.css";
+
+import luke from "./images/1.jpg";
+import obiwan from "./images/10.jpg";
+import anakin from "./images/11.jpg";
+import c3po from "./images/2.jpg";
+import jabba from "./images/16.jpg";
+import chewie from "./images/13.jpg";
+import han from "./images/14.jpg";
+
+import Card from "./components/Card";
 
 function App() {
   return (
-    <div className="wrapper">
+    <div>
       <header>
-        <h1>Star Wars Characters</h1> 
+        <h1>Star Wars Characters</h1>
       </header>
       <div className="cards">
-        <div className="card">
-          <img src="images/luke-skywalker.jpg" alt="luke skywalker" />
-          <h2 className="characterName">Luke Skywalker</h2>
-          <ul className="details">
-            <li>Homeworld</li>
-            <li>Films</li>
-            <li>Species</li>
-          </ul>
-        </div>
-        <div className="card">
-          <img src="images/luke-skywalker.jpg" alt="luke skywalker" />
-          <h2 className="characterName">Luke Skywalker</h2>
-          <ul className="details">
-            <li>Homeworld</li>
-            <li>Films</li>
-            <li>Species</li>
-          </ul>
-        </div>
-        <div className="card">
-          <img src="images/luke-skywalker.jpg" alt="luke skywalker" />
-          <h2 className="characterName">Luke Skywalker</h2>
-          <ul className="details">
-            <li>Homeworld</li>
-            <li>Films</li>
-            <li>Species</li>
-          </ul>
-        </div>
-        <div className="card">
-          <img src="images/luke-skywalker.jpg" alt="luke skywalker" />
-          <h2 className="characterName">Luke Skywalker</h2>
-          <ul className="details">
-            <li>Homeworld</li>
-            <li>Films</li>
-            <li>Species</li>
-          </ul>
-        </div>
+        <Card avatar={luke} name="luke skywalker" />
+        <Card avatar={obiwan} name="obi-wan kenobi" />
+        <Card avatar={anakin} name="anakin skywalker" />
+        <Card avatar={c3po} name="c3po" />
+        <Card avatar={jabba} name="jabba the hut" />
+        <Card avatar={chewie} name="chewbacca" />
+        <Card avatar={han} name="han solo" />
       </div>
     </div>
   );
