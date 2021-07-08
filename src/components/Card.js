@@ -1,21 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
+import Avatar from "./Avatar";
+import Description from "./Description";
 
-class Card extends Component {
-  render() {
-    return (
-      <div className="flip-card">
-        <div className="flip-card-inner">
-          <div className="flip-card-front">
-            <img src={this.props.avatar} alt={this.props.name} />
-          </div>
-          <div className="flip-card-back">
-            <h2>{this.props.name}</h2>
-            <p>lorem ipsum habab hjasdfe jlkafdsn hasdfjhaskdfh</p>
-          </div>
-        </div>
+export default function Card(props) {
+  return (
+    <div className="flip-card">
+      <div className="flip-card-inner">
+        <Avatar avatar={props.avatar} name={props.name} />
+        <Description name={props.name} />
       </div>
-    );
-  }
+    </div>
+  );
 }
-
-export default Card;
